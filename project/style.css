@@ -1,0 +1,145 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    background: #fff;
+    color: #333;
+  }
+  
+  .hero-section {
+    background: #f38b3a;
+    padding: 3rem 2rem;
+  }
+  
+  .hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem; /* Add some controlled spacing */
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .hero-text {
+    max-width: 300px; /* Reduce this to pull it closer */
+    text-align: right;
+  }
+  
+  .hero-text h1 {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    color: #fff;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 0;
+    padding: 0.75rem 1.5rem;
+    background: #fff;
+    color: #f38b3a;
+    border: 1px solid #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+  }
+  
+  .btn:hover {
+    background: transparent;
+    color: #fff;
+  }
+  
+  .product-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .category-card {
+    text-align: center;
+  }
+  
+  .category-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .category-card p {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+
+  .featured-section {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .featured-section .title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .glide__slide {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .glide__slide img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    color: black;
+  }
+  
+  .glide__slide p {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    
+  }
+
+  .glide {
+    position: relative;
+  }
+  
+  .glide__arrows {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 10px;
+    pointer-events: none; 
+  }
+  
+  .glide__arrow {
+    pointer-events: all; 
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  
+  

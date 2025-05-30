@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shero Intern Test</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero-section">
+      <div class="hero-content">
+        <div class="hero-image">
+          <img src="images/hero.jpg" alt="Thread spools with fruits" />
+        </div>
+        <div class="hero-text">
+          <h1>Add color to your masterpiece</h1>
+          <a href="#" class="btn">Shop Now</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="product-categories">
+        <div class="category-card">
+          <img src="images/glide.jpg" alt="Glide threads with fruits" />
+          <p>GLIDE</p>
+        </div>
+        <div class="category-card">
+          <img src="images/bobbin.jpg" alt="Magnetic core bobbin threads" />
+          <p>MAGNETIC CORE BOBBIN</p>
+        </div>
+        <div class="category-card">
+          <img src="images/stabilizer.jpg" alt="Premium stabilizers" />
+          <p>PREMIUM STABILIZER</p>
+        </div>
+      </section>
+    </main>
+    <section class="featured-section">
+      <h2 class="title">Featured Products</h2>
+      <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <img src="images/stabilizer.jpg" alt="Embroidery Stabilizer" />
+              <p>EMBROIDERY STABILIZER</p>
+            </li>
+            <li class="glide__slide">
+              <img src="images/glide.jpg" alt="Cubbie Grey Elephant" />
+              <p>CUBBIE GREY ELEPHANT</p>
+            </li>
+            <li class="glide__slide">
+              <img src="images/bobbin.jpg" alt="Kimberbell Cup of Cheer" />
+              <p>KIMBERBELL CUP OF CHEER</p>
+            </li>
+            <li class="glide__slide">
+              <img src="images/glide.jpg" alt="Kimberbell Two Scoops" />
+              <p>KIMBERBELL TWO SCOOPS</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+            ‹
+          </button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+            ›
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+      new Glide(".glide", {
+        type: "carousel",
+        perView: 4,
+        gap: 20,
+        breakpoints: {
+          1024: {
+            perView: 3,
+          },
+          768: {
+            perView: 2,
+          },
+          480: {
+            perView: 1,
+          },
+        },
+      }).mount();
+    </script>
+  </body>
+</html>
